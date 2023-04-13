@@ -1,0 +1,172 @@
+root@1327406-ci73238:/home# vi pets 
+root@1327406-ci73238:/home# cat pets
+1 cat myumyu 2015
+2 cat muyrrr 2018
+3 cat muuur 2017
+
+1 dog baubau 2019
+2 dog gav 2017
+3 dog gav bau 2020
+
+1 hamster shsh 2020
+2 hamster shushu 2021
+3 hanster she 2022
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home# cat pack_animals 
+1 horse brrrr 2012
+2 horse star 2010
+3 horse lucky 2008
+
+1 camel longdistant 2015
+2 camel huge 2017
+3 camelsafary 2012
+
+1 donkey loud 2017
+2 donkey sad 2015
+3 donkey yo 2020
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home# cat pets 
+1 cat myumyu 2015
+2 cat muyrrr 2018
+3 cat muuur 2017
+
+1 dog baubau 2019
+2 dog gav 2017
+3 dog gav bau 2020
+
+1 hamster shsh 2020
+2 hamster shushu 2021
+3 hanster she 2022
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home# cat pets pack_animals > animals
+root@1327406-ci73238:/home# cat animals 
+1 cat myumyu 2015
+2 cat muyrrr 2018
+3 cat muuur 2017
+
+1 dog baubau 2019
+2 dog gav 2017
+3 dog gav bau 2020
+
+1 hamster shsh 2020
+2 hamster shushu 2021
+3 hanster she 2022
+1 horse brrrr 2012
+2 horse star 2010
+3 horse lucky 2008
+
+1 camel longdistant 2015
+2 camel huge 2017
+3 camelsafary 2012
+
+1 donkey loud 2017
+2 donkey sad 2015
+3 donkey yo 2020
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# mv animals human_friends
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home# mkdir attestation-02
+root@1327406-ci73238:/home# mv human_friends /home/attestation-02/
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# apt search mysql
+Sorting... Done
+Full Text Search... Done
+
+...
+
+mysql-sandbox/jammy 3.2.05-1 all
+  Install and set up one or more MySQL server instances easily
+
+mysql-server/jammy-updates,jammy-security 8.0.32-0ubuntu0.22.04.2 all
+  MySQL database server (metapackage depending on the latest version)
+
+mysql-server-8.0/jammy-updates,jammy-security 8.0.32-0ubuntu0.22.04.2 amd64
+  MySQL database server binaries and system database setup
+
+...
+
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# apt install mysql-server
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home#
+root@1327406-ci73238:/home# cd ~
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~# wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+
+...
+
+Saving to: ‘teamviewer_amd64.deb’
+
+teamviewer_amd64.deb          100%[=================================================>]  76.64M  23.1MB/s    in 3.3s    
+
+2023-04-13 14:30:05 (23.1 MB/s) - ‘teamviewer_amd64.deb’ saved [80360708/80360708]
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home# 
+root@1327406-ci73238:/home#
+root@1327406-ci73238:~# dpkg -i teamviewer_amd64.deb
+
+...
+
+dpkg: error processing package teamviewer (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
+Errors were encountered while processing:
+ teamviewer
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~# apt -f install
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Correcting dependencies... Done
+
+...
+
+Need to get 322 kB of archives.
+After this operation, 1,196 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+
+...
+
+Setting up teamviewer (15.40.8) ...
+gpg: directory '/root/.gnupg' created
+gpg: keybox '/root/.gnupg/pubring.kbx' created
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+needrestart is being skipped since dpkg has failed
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~#
+root@1327406-ci73238:~# dpkg -i teamviewer_amd64.deb
+(Reading database ... 93327 files and directories currently installed.)
+Preparing to unpack teamviewer_amd64.deb ...
+Removed /etc/systemd/system/multi-user.target.wants/teamviewerd.service.
+Unpacking teamviewer (15.40.8) over (15.40.8) ...
+Setting up teamviewer (15.40.8) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
+root@1327406-ci73238:~# 
+root@1327406-ci73238:~# 
+root@1327406-ci73238:~# 
+root@1327406-ci73238:~# dpkg -r teamviewer
+root@1327406-ci73238:~# 
+root@1327406-ci73238:~# 
+root@1327406-ci73238:~# 
